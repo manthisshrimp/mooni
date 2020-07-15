@@ -1,0 +1,19 @@
+{
+  "name": "mooni",
+  "version": "0.1.0",
+  "description": "Calculator... no... Calcunow!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/manthisshrimp/mooni",
+  "keywords": [
+    "Electron",
+    "calculator"
+  ],
+  "author": "manthisshrimp",
+  "license": "Apache License 2.0",
+  "devDependencies": {
+    "electron": "^9.1.0"
+  }
+}
