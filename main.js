@@ -9,6 +9,7 @@ function createWindow() {
       preload: path.join(__dirname, 'preload.js')
     }
   })
+  mainWindow.removeMenu()
   mainWindow.loadFile('index.html')
 }
 
