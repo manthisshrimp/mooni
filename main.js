@@ -3,11 +3,14 @@ const path = require('path')
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 600,
+    height: 400,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
-    }
+      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: true
+    },
+    frame: false,
+    icon: path.join(__dirname, '/assets/images/mooni.png')
   })
   mainWindow.removeMenu()
   mainWindow.loadFile('index.html')
