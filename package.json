@@ -17,6 +17,7 @@
     "electron": "^9.1.0"
   },
   "dependencies": {
-    "custom-electron-titlebar": "^3.2.2-hotfix62"
+    "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "jquery": "^3.5.1"
   }
 }
