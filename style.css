@@ -31,6 +31,7 @@ html, body {
     color: #fbfbff;
     background-color: #1c1d21;
     font-family: 'FiraCode', sans-serif;
+    font-size: 16px;
 }
 
 .output-textarea {
@@ -39,9 +40,11 @@ html, body {
     resize: none;
     height: 100%;
     box-sizing: border-box;
-    width: 150px;
+    width: 200px;
     padding: 16px;
-    color: #fbfbff;
+    color: #cffcff;
     background-color: #1c1d21;
     font-family: 'FiraCode', sans-serif;
+    text-align:right;
+    font-size: 16px;
 }
