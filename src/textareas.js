@@ -8,6 +8,7 @@ function processInput(input) {
     var outputLines = []
     lines.forEach(function (line) {
         var outputLine = evaluateLine(line)
+        outputLine = outputLine.substring(0, 16)
         outputLines.push(outputLine)
     });
     var output = outputLines.join('\n')
@@ -17,7 +18,7 @@ function processInput(input) {
 function evaluateLine(line) {
     try {
         line = line.replace(/%/g, '/100');
-        return eval(line)
+        return '' + eval(line)
     } catch (err) {
         return ''
     }

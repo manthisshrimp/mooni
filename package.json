@@ -1,7 +1,7 @@
 {
   "name": "mooni",
   "productName": "Mooni",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Calculator... no... Calcunow!",
   "main": "src/index.js",
   "scripts": {
