@@ -1,24 +1,64 @@
 {
   "name": "mooni",
   "productName": "Mooni",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Calculator... no... Calcunow!",
-  "main": "main.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
   },
   "repository": "https://github.com/manthisshrimp/mooni",
-  "keywords": [
-    "Electron",
-    "calculator"
-  ],
-  "author": "manthisshrimp",
+  "keywords": [],
+  "author": {
+    "name": "Aldus Botha",
+    "email": "aldusbotha@gmail.com"
+  },
   "license": "Apache-2.0",
-  "devDependencies": {
-    "electron": "^9.1.0"
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "src/assets/icons/mooni.ico"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "mooni",
+            "setupIcon": "src/assets/icons/mooni.ico"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   },
   "dependencies": {
     "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "electron-squirrel-startup": "^1.0.0",
     "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.52",
+    "@electron-forge/maker-deb": "^6.0.0-beta.52",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.52",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.52",
+    "@electron-forge/maker-zip": "^6.0.0-beta.52",
+    "electron": "9.1.0"
   }
 }
