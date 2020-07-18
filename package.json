@@ -21,6 +21,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
+        "ignore": "vscode",
         "icon": "src/assets/icons/mooni.ico"
       },
       "makers": [
