@@ -14,7 +14,6 @@ function createWindow() {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true
     },
-    frame: false,
     icon: path.join(__dirname, '/assets/images/mooni.png')
   })
   mainWindow.removeMenu()
