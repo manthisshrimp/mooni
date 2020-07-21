@@ -17,8 +17,13 @@ function processInput(input) {
 
 function evaluateLine(line) {
     try {
-        line = line.replace(/%/g, '/100');
-        return '' + eval(line)
+        line = line.replace(/%/g, '/100')
+        var evaluated = eval(line)
+        if (typeof evaluated !== 'undefined') {
+            return '' + evaluated
+        } else {
+            return ''
+        }
     } catch (err) {
         return ''
     }
